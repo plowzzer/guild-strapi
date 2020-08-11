@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects",
+  "info": {
+    "name": "Subject"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "event": {
+      "via": "subjects",
+      "model": "event"
+    }
+  }
+}
