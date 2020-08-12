@@ -21,9 +21,10 @@
     "description": {
       "type": "text"
     },
-    "event": {
+    "events": {
+      "collection": "event",
       "via": "subjects",
-      "model": "event"
+      "dominant": true
     }
   }
 }

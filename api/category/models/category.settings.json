@@ -18,9 +18,9 @@
       "targetField": "name",
       "required": true
     },
-    "event": {
-      "via": "category",
-      "model": "event"
+    "events": {
+      "collection": "event",
+      "via": "category"
     }
   }
 }

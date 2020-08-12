@@ -40,13 +40,13 @@
       "type": "time",
       "required": false
     },
-    "category": {
-      "model": "category",
-      "via": "event"
-    },
     "subjects": {
-      "collection": "subject",
-      "via": "event"
+      "via": "events",
+      "collection": "subject"
+    },
+    "category": {
+      "via": "events",
+      "model": "category"
     }
   }
 }
