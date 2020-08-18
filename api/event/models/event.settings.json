@@ -13,9 +13,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "text"
-    },
     "place": {
       "type": "string"
     },
@@ -41,12 +38,15 @@
       "required": false
     },
     "subjects": {
-      "via": "events",
-      "collection": "subject"
+      "collection": "subject",
+      "via": "events"
     },
     "category": {
-      "via": "events",
-      "model": "category"
+      "model": "category",
+      "via": "events"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
