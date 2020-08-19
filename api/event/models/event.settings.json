@@ -38,8 +38,8 @@
       "required": false
     },
     "subjects": {
-      "collection": "subject",
-      "via": "events"
+      "via": "events",
+      "collection": "subject"
     },
     "category": {
       "model": "category",
